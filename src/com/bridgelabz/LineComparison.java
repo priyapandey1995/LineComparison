@@ -10,8 +10,15 @@ import java.util.Scanner;
  *
  */
 public class LineComparison{
+	/**
+	 * 
+	 * @return
+	 */
 	
 	public static double inputsOfLength() {
+		/**
+		 * taking user inputs and then checking the equality of two lines
+		 */
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the value for x1");
 		double x1 = sc.nextDouble();
