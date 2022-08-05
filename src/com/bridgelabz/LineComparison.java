@@ -17,7 +17,7 @@ public class LineComparison{
 	
 	public static double inputsOfLength() {
 		/**
-		 * taking user inputs and then checking the equality of two lines
+		 * taking user inputs 
 		 */
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the value for x1");
@@ -42,14 +42,18 @@ public class LineComparison{
 		
 		Double lengthOfLine2 = inputsOfLength();
 		
-		System.out.println("lenth of line two is"+lengthOfLine2);
+		System.out.println("length of line 2 is"+ lengthOfLine2);
 		
-		if(lengthOfLine1.equals(lengthOfLine2)) {
-			System.out.println("both the lines are equal");
-			}
-			else {
-			System.out.println("Both the lines are not equal");
-			}
+		
+		/**
+		 * UC-3 comparing two lines and checking which is greter or lesser
+		 */
+		if(lengthOfLine1.compareTo(lengthOfLine2) < 0 ) {
+			System.out.println(  lengthOfLine1 +" is lesser than" + " " +lengthOfLine2);
+		}
+		else {
+			System.out.println(lengthOfLine1 + " is greater than" + " " +lengthOfLine2);
+		}
 	
 		
 		
