@@ -18,6 +18,7 @@ public class LineComparison{
 	public static double inputsOfLength() {
 		/**
 		 * taking user inputs 
+		 * Calculating Lengths
 		 */
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the value for x1");
