@@ -53,8 +53,7 @@ public class  LineComparison{
 				System.out.println(  lengthOfLine1 +" is lesser than" + " " +lengthOfLine2);
 			}
 			else {
-				System.out.println(lengthOfLine1 + " is greater than" + " " +lengthOfLine2);
-			
+				System.out.println(lengthOfLine1 + "is greater than " + " " + lengthOfLine2);
 		}
 		
 			
