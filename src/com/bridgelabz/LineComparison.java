@@ -9,17 +9,16 @@ import java.util.Scanner;
  * @author pande
  *
  */
-public class LineComparison{
-	/**
-	 * 
-	 * @return
-	 */
+public class  LineComparison{
+	public static double lengthOfLine1,lengthOfLine2;
+	static int result;
 	
-	public static double inputsOfLength() {
-		/**
-		 * taking user inputs 
-		 * Calculating Lengths
-		 */
+	/**
+	 * taking user inputs 
+	 * Calculating Lengths
+	 */
+	public  double inputsOfLength() {
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the value for x1");
 		double x1 = sc.nextDouble();
@@ -36,30 +35,31 @@ public class LineComparison{
 		double length = Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
 		return length;
 	}
+	
+
+
 	public static void main(String[] args) {
-		Double lengthOfLine1 = inputsOfLength();
+		LineComparison line = new  LineComparison();
+		Double lengthOfLine1 = line.inputsOfLength();
 		
-		System.out.println("length of line 1 is" + lengthOfLine1);
+	    System.out.println("length of line 1 is" + lengthOfLine1);
 		
-		Double lengthOfLine2 = inputsOfLength();
+		Double lengthOfLine2 = line.inputsOfLength();
 		
 		System.out.println("length of line 2 is"+ lengthOfLine2);
-		
-		
-		/**
-		 * UC-3 comparing two lines and checking which is greter or lesser
-		 */
-		if(lengthOfLine1.compareTo(lengthOfLine2) < 0 ) {
-			System.out.println(  lengthOfLine1 +" is lesser than" + " " +lengthOfLine2);
+		System.out.println("euqal::"+ lengthOfLine1.equals(lengthOfLine2));
+		result = Double.compare(lengthOfLine1, lengthOfLine2);
+			if(result < 0 ) {
+				System.out.println(  lengthOfLine1 +" is lesser than" + " " +lengthOfLine2);
+			}
+			else {
+				System.out.println(lengthOfLine1 + "is greater than " + " " + lengthOfLine2);
 		}
-		else {
-			System.out.println(lengthOfLine1 + " is greater than" + " " +lengthOfLine2);
-		}
-	
 		
-		
-	}
+			
 	
+
+}
 }
 		  
 
